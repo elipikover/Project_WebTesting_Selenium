@@ -7,34 +7,40 @@ public class PurchaseAGiftPage extends BasePage {
 
     public  void toSomeoneElse(){clickelementJS(By.xpath("//*[text()='למישהו אחר']"));}
 
-    public void enterRecieverName(String name){getWebElement(By.cssSelector("input[type=text]")).sendKeys(name);}
+    public void enterRecieverName(String name){
+        sendKeysToElement(By.cssSelector("input[type=text]"),name );}
 
     public void chooseAnEvent(){clickelementJS(By.className("selected-name"));}
 
     public  void reasonForEvent(){clickelementJS(By.cssSelector("li[value='14']"));}
 
-    public void enterABlessing(String blessing){getWebElement(By.cssSelector("textarea[rows='4']")).sendKeys(blessing);}
+    public void enterABlessing(String blessing){
+        sendKeysToElement(By.cssSelector("textarea[rows='4']"), blessing);}
 
-    public void uploadAnImage(String pathToFile){getWebElement(By.cssSelector("input[type=file]")).sendKeys(pathToFile);}
+    public void uploadAnImage(String pathToFile){
+        sendKeysToElement(By.cssSelector("input[type=file]"), pathToFile);}
 
     public void scrollToContinueButton(){scrollToElement(By.cssSelector("button[gtm=המשך]"));}
 
     public void clickContinueButton(){clickelementJS(By.cssSelector("button[gtm=המשך]"));}
 
-    public void pressNow(){getWebElement(By.cssSelector("svg[viewBox='0 0 20 20']")).click();}
+    public void pressNow(){clickElement(By.cssSelector("svg[viewBox='0 0 20 20']"));}
 
-    public void chooseEmail() {getWebElement(By.cssSelector("svg[gtm=method-email]")).click();}
+    public void chooseEmail() {clickElement(By.cssSelector("svg[gtm=method-email]"));}
 
-    public void enterEmail(String email){getWebElement(By.cssSelector("input[type=email]")).sendKeys(email);}
+    public void enterEmail(String email){
+        sendKeysToElement(By.cssSelector("input[type=email]"), email);}
 
-    public void clearSenderName(){getWebElement(By.cssSelector("input[placeholder='שם שולח המתנה']")).clear();}
+    public void clearSenderName(){clearElement(By.cssSelector("input[placeholder='שם שולח המתנה']"));}
 
-    public void enterSenderName(String name){getWebElement(By.cssSelector("input[placeholder='שם שולח המתנה']")).sendKeys(name);}
+    public void enterSenderName(String name){
+        sendKeysToElement(By.cssSelector("input[placeholder='שם שולח המתנה']"), name);}
 
     public String verifyEmail(){return getTextFromElement(By.cssSelector("input[name=email]"));}
 
     public String verifySenderName(){return getTextFromElement(By.cssSelector("input[placeholder='שם שולח המתנה']"));}
 
-    public void clickPay() {getWebElement(By.cssSelector("svg[gtm=method-email]")).click();}
+    public void clickPay() {clickElement(By.cssSelector("svg[gtm=method-email]"));}
+
     }
 

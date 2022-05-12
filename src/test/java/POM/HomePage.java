@@ -6,7 +6,7 @@ import utils.BasePage;
 
 public class HomePage extends BasePage {
 
-    public void clickLoginOrRegister(){getWebElement(By.className("notSigned")).click();}
+    public void clickLoginOrRegister(){clickElement(By.className("notSigned"));}
 
     public void clickSelectAmount(){clickelementJS(By.cssSelector("span[alt=סכום]"));}
 

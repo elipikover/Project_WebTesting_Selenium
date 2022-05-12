@@ -8,12 +8,8 @@ public class BuissinessPage extends BasePage {
     public void clickBuissiness(String buissiness) {clickelementJS(By.linkText(buissiness));}
 
     public void clickSubmit(){
-        getWebElement(By.cssSelector("button[type=submit]")).click();
+        clickElement(By.cssSelector("button[type=submit]"));
     }
 
-    public void enterAmount(String amount){
-
-        getWebElement(By.cssSelector("input[inputmode=decimal]")).sendKeys(amount);
-
-    }
+    public void enterAmount(String amount){sendKeysToElement(By.cssSelector("input[inputmode=decimal]"),amount);}
 }

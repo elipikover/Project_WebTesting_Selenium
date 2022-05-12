@@ -16,11 +16,11 @@ public class BasePage {
 //  Methods to perform actions on elements
     public void clickElement(By locator){getWebElement(locator).click();}
 
-    public void SendKeysToElement(By locator,String Keyz){getWebElement(locator).sendKeys(Keyz);}
+    public void sendKeysToElement(By locator, String Keyz){getWebElement(locator).sendKeys(Keyz);}
 
     public String getTextFromElement(By locator){return getWebElement(locator).getAttribute(("value"));}
 
-
+    public void clearElement(By locator){getWebElement(locator).clear();}
 
     // Click element via JS
     public void clickelementJS(By locator){ WebElement elementToClick = getWebElement(locator);
