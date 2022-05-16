@@ -1,10 +1,13 @@
 package utils;
 
 public class Constants {
-//    Path of chromedriver
-    public static final String CHROMEDRIVER_PATH = "/Users/epikover/IdeaProjects/chromedriver";
 
-//    Details for default existing user
+    public static final String CHROMEDRIVER_PATH = "/Users/epikover/IdeaProjects/chromedriver";
+    public static final String FIREFOXDRIVER_PATH = "/Users/epikover/IdeaProjects/geckodriver";
+
+    /**
+     * |Details for default existing user
+     */
     public static final String NAME_DEFAULT_USER="Adrian";
     public static final String EMAIL_DEFAULT_USER="Kazabubu5@a.com";
     public static final String PASSWORD_DEFAULT_USER="1223Art5";

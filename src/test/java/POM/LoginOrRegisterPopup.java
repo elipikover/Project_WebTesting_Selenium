@@ -20,11 +20,11 @@ public class LoginOrRegisterPopup extends BasePage {
         return getTextFromElement(By.cssSelector("input[type=email]"));
     }
 
-        public void enterLoginPass1(String string){sendKeysToElement(By.cssSelector("input[placeholder=סיסמה]"), string);}
+        public void enterLoginPass1(String string){sendKeysToElement(By.cssSelector("input[placeholder='סיסמה']"), string);}
 
         public void enterLoginPass2(String string){sendKeysToElement(By.cssSelector("input[placeholder='אימות סיסמה']"), string);}
 
-        public String verifyTextInPass1(){return getTextFromElement(By.cssSelector("input[placeholder=סיסמה]"));}
+        public String verifyTextInPass1(){return getTextFromElement(By.cssSelector("input[placeholder='סיסמה']"));}
 
         public String verifyTextInPass2(){return getTextFromElement(By.cssSelector("input[placeholder='אימות סיסמה']"));}
 

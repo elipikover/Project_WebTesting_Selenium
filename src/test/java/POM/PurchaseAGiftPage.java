@@ -20,9 +20,11 @@ public class PurchaseAGiftPage extends BasePage {
     public void uploadAnImage(String pathToFile){
         sendKeysToElement(By.cssSelector("input[type=file]"), pathToFile);}
 
-    public void scrollToContinueButton(){scrollToElement(By.cssSelector("button[gtm=המשך]"));}
+    public String verifyReceiverName(){return getTextFromElement(By.cssSelector("input[data-parsley-required-message=\"מי הזוכה המאושר? יש להשלים את שם המקבל/ת\"]"));}
 
-    public void clickContinueButton(){clickelementJS(By.cssSelector("button[gtm=המשך]"));}
+    public void scrollToContinueButton(){scrollToElement(By.cssSelector("button[gtm='המשך']"));}
+
+    public void clickContinueButton(){clickelementJS(By.cssSelector("button[gtm='המשך']"));}
 
     public void pressNow(){clickElement(By.cssSelector("svg[viewBox='0 0 20 20']"));}
 
@@ -36,6 +38,12 @@ public class PurchaseAGiftPage extends BasePage {
     public void enterSenderName(String name){
         sendKeysToElement(By.cssSelector("input[placeholder='שם שולח המתנה']"), name);}
 
+
+    /**
+     * @return email field content
+     *
+     *
+     */
     public String verifyEmail(){return getTextFromElement(By.cssSelector("input[name=email]"));}
 
     public String verifySenderName(){return getTextFromElement(By.cssSelector("input[placeholder='שם שולח המתנה']"));}

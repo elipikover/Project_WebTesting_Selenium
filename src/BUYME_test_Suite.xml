@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+    <suite name="TestSuite" thread-count="2" parallel="tests" >
+        <test name="Eli's Test">
+            <classes>
+                <class name="BuyMeSanityTests"></class>
+            </classes>
+        </test>
+</suite>

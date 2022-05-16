@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <browserTypeMain>webdriver.chrome.driver</browserTypeMain>
+    <browserType>webdriver.gecko.driver</browserType>
+    <URL>https://buyme.co.il/</URL>
+</config>
