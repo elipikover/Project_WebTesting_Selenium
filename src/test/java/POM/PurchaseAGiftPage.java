@@ -38,14 +38,6 @@ public class PurchaseAGiftPage extends BasePage {
     public void enterSenderName(String name){
         sendKeysToElement(By.cssSelector("input[placeholder='שם שולח המתנה']"), name);}
 
-
-    /**
-     * @return email field content
-     *
-     *
-     */
-    public String verifyEmail(){return getTextFromElement(By.cssSelector("input[name=email]"));}
-
     public String verifySenderName(){return getTextFromElement(By.cssSelector("input[placeholder='שם שולח המתנה']"));}
 
     public void clickPay() {clickElement(By.cssSelector("svg[gtm=method-email]"));}

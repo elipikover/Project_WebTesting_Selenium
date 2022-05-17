@@ -13,10 +13,9 @@ import java.io.IOException;
 
 public class Report {
     public static ExtentReports extent= new ExtentReports();
-    public static ExtentTest test = extent.createTest("Intro & registration flow", "Test Register Flow");
-    public static ExtentTest test2 = extent.createTest(" Home screen", "Test Home Page");
-    public static ExtentTest test3 = extent.createTest("Pick a Buissiness", "Test Pick a Buissiness");
-    public static ExtentTest test4 = extent.createTest("Sender & Receiver information", "Sender & Receiver information screen");
+    public static ExtentTest test = extent.createTest("BUYME Sanity", "Flow");
+
+
 
 
     /**
@@ -24,19 +23,10 @@ public class Report {
      */
     public static void passedTest(String details){ test.log(Status.PASS, details);}
 
-    public static void passedTest2(String details){ test2.log(Status.PASS, details);}
-
-    public static void passedTest3(String details){ test3.log(Status.PASS, details);}
-
-    public static void passedTest4(String details){ test4.log(Status.PASS, details);}
-
     public static void failedTest(String details){ test.log(Status.FAIL, details);}
 
-    public static void failedTest2(String details){ test2.log(Status.FAIL, details);}
 
-    public static void failedTest3(String details){ test3.log(Status.FAIL, details);}
 
-    public static void failedTest4(String details){ test4.log(Status.FAIL, details);}
 
 
     /**

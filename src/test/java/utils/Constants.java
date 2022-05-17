@@ -14,4 +14,5 @@ public class Constants {
 
     public static String GIFTSEARCHURL = "https://buyme.co.il/search?budget=5&category=22&region=13";
     public static String SAMPLE_FILE = "/Users/epikover/IdeaProjects/Java/QA_Experts/Project_WebTesting_Selenium/picName1.png";
+
 }

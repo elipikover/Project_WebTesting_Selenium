@@ -6,9 +6,7 @@ import utils.Constants;
 
 public class LoginOrRegisterPopup extends BasePage {
 
-        public void clickFirstTimeRegister(){
-            clickElement(By.className("text-link"));
-        }
+        public void clickFirstTimeRegister(){clickElement(By.className("text-link"));}
 
         public void enterLoginName(String string){sendKeysToElement(By.cssSelector("input[type=text]"),string);}
 
